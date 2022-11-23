@@ -1,0 +1,21 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+
+# testing
+/coverage
+
+# production
+/dist
+
+/tmp 
+
+# misc
+.DS_Store
+/backend/npm-debug.log*
+/frontend/npm-debug.log*
+/backend/package-lock.json
+/frontend/package-lock.json
+/backend/.env
+/frontend/.env

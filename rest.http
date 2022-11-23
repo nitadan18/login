@@ -1,0 +1,30 @@
+
+### Login
+@APP_URL=http://localhost:4001/api/v1
+@APP_BEARER=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3QyQHRlc3QuY29tIiwiaWF0IjoxNjY5MTM0MzAyLCJleHAiOjE2NjkxMzYxMDJ9.TJd2il_XAn9jMksQCS10r_8zIpl09NE0dDIgTjv9pK0
+
+### register new user
+POST {{APP_URL}}/register
+Content-Type: application/json
+Accept: application/json
+
+{
+    "userName": "test3@test.com",
+    "passWord": "password3"
+}
+
+### login user
+POST {{APP_URL}}/login
+Content-Type: application/json
+Accept: application/json
+
+{
+    "userName": "test3@test.com",
+    "passWord": "password3"
+}
+
+### logout user
+POST {{APP_URL}}/logout
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer {{APP_BEARER}}
